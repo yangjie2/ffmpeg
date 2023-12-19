@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
     ffmpeg lib.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/ffmpeg"
+  spec.homepage     = "https://github.com/yangjie2/ffmpeg"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
