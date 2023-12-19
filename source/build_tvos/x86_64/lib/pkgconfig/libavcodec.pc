@@ -1,0 +1,14 @@
+prefix=./build_tvos/x86_64
+exec_prefix=${prefix}
+libdir=./build_tvos/x86_64/lib
+includedir=./build_tvos/x86_64/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 60.31.102
+Requires: libswresample >= 4.12.100, libavutil >= 58.29.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -liconv -lm -pthread -lz -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo
+Libs.private: 
+Cflags: -I${includedir}

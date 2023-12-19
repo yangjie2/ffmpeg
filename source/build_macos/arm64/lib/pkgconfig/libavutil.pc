@@ -1,0 +1,14 @@
+prefix=./build_macos/arm64
+exec_prefix=${prefix}
+libdir=./build_macos/arm64/lib
+includedir=./build_macos/arm64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 58.29.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -framework VideoToolbox -L/opt/homebrew/Cellar/libx11/1.8.6/lib -lX11 -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Libs.private: 
+Cflags: -I${includedir}
