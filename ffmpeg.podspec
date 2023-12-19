@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
   spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  spec.author       = { "yangjie" => "yangjie@puwell.com" }
+  spec.author       = { "yangjie" => "yangjie2107@hotmail.com" }
 
   spec.ios.deployment_target = "12.0"
   spec.osx.deployment_target = "10.15"
@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "git@192.168.10.246:/home/git/iOS/ffmpeg.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/yangjie2/ffmpeg.git", :tag => "#{spec.version}" }
   spec.source_files = "ffmpeg/include/**/*"
   spec.public_header_files = "ffmpeg/include/**/*.h"
   spec.header_mappings_dir = 'ffmpeg/include'
